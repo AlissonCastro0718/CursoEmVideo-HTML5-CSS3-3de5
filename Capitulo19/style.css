@@ -1,0 +1,49 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&display=swap');
+/*Fonte do titulo*/
+
+@import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
+/*Fonte do cordel*/
+
+:root{
+--FONT1:'Sriracha', cursive;
+--FONT2:'Passion One', cursive;
+
+}
+
+*{
+padding: 0px;
+margin:  0px;
+}
+
+header{
+    background-color: black;
+    color: white;
+    font-family: var(--FONT2);
+    font-size: 1.5em;
+    text-align: center;
+    padding-top: 60px;
+    padding-bottom: 20px;
+}
+
+header a{
+    color: white;
+    text-decoration: none;
+    
+}
+
+header a:hover{
+    text-decoration: underline;
+
+}
+
+main{
+    font-family: var(--FONT1);
+}
+
+.cordel{
+    padding: 40px 20px;
+    max-width:50vh ;
+    font-size: 22px;
+}
