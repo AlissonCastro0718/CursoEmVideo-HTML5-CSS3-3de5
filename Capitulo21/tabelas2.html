@@ -13,7 +13,25 @@ table{
     width: 500px;
     font-size: 18px;
     border-collapse: collapse;
+    position: relative;
 }
+
+caption{
+    font-size: 1.5em;
+    font-weight: bold;
+    padding: 10px;
+    background-color: lightgray;
+}
+
+
+tbody > tr:nth-child(2n){
+background-color: lightgray;
+}
+/*
+2n-1 ou odd(impar)
+2n ou even(par)
+usa pra selecionar itens aternados
+*/
 td,th {
 border: 1px solid black;
 }
@@ -21,14 +39,21 @@ thead, tfoot{
 background-color: gray;
 color: white;
 }
+
+thead>tr>th{
+    position: sticky;
+    top:-1px;
+    background-color: gray;
+}
+
 .num{
 text-align: right;
-background-color: lightslategray;
+width: 25%;
 }
 
 tfoot .num{
     font-weight:bold;
-    background-color: gray;
+
 }
 
     </style>
@@ -38,6 +63,8 @@ tfoot .num{
 
     <!-- ANATOMIA PARA TABELAS GRANDES 
      TABLE
+        CAPTION
+
         THEAD
             TR,TD,TH
         TBODY
@@ -45,12 +72,12 @@ tfoot .num{
         TFOOT
             TR,TD,TH
     -->
-
     <table>
+        <caption>População das unidades federativas</caption>
         <thead>
             <tr>
-                <th>Estado</th>
-                <th>Populção</th>
+                <th scope="col">Estado</th>
+                <th scope="col">Populção</th>
             </tr>
     </thead>
        
@@ -166,10 +193,17 @@ tfoot .num{
     </tbody>
         <tfoot>
             <tr>
-                <td>Total de habitantes</td>
+                <th scope="row">Total de habitantes</th>
                 <td class="num">214.300.000</td>
             </tr>
         </tfoot>
     </table>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla provident explicabo quidem officia dolore deleniti suscipit vero! Vero soluta consequatur facere? Quasi doloremque aperiam consectetur cupiditate debitis quas accusantium eius! Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere similique harum quos at, praesentium voluptatum doloribus magni nobis veniam, officiis distinctio corporis ea dolore, consequuntur laborum sed incidunt animi quas. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem repudiandae explicabo delectus similique, unde alias aliquid cum vitae perspiciatis, reiciendis, odit consequatur. Quibusdam maiores nam veritatis magni quia laudantium alias. Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, dolorem architecto. Similique rem soluta quae ullam ab, cupiditate veritatis ducimus quas magnam consectetur animi quam cum, quasi labore dolores consequatur.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla provident explicabo quidem officia dolore deleniti suscipit vero! Vero soluta consequatur facere? Quasi doloremque aperiam consectetur cupiditate debitis quas accusantium eius! Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere similique harum quos at, praesentium voluptatum doloribus magni nobis veniam, officiis distinctio corporis ea dolore, consequuntur laborum sed incidunt animi quas. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem repudiandae explicabo delectus similique, unde alias aliquid cum vitae perspiciatis, reiciendis, odit consequatur. Quibusdam maiores nam veritatis magni quia laudantium alias. Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, dolorem architecto. Similique rem soluta quae ullam ab, cupiditate veritatis ducimus quas magnam consectetur animi quam cum, quasi labore dolores consequatur.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla provident explicabo quidem officia dolore deleniti suscipit vero! Vero soluta consequatur facere? Quasi doloremque aperiam consectetur cupiditate debitis quas accusantium eius! Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere similique harum quos at, praesentium voluptatum doloribus magni nobis veniam, officiis distinctio corporis ea dolore, consequuntur laborum sed incidunt animi quas. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem repudiandae explicabo delectus similique, unde alias aliquid cum vitae perspiciatis, reiciendis, odit consequatur. Quibusdam maiores nam veritatis magni quia laudantium alias. Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, dolorem architecto. Similique rem soluta quae ullam ab, cupiditate veritatis ducimus quas magnam consectetur animi quam cum, quasi labore dolores consequatur.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla provident explicabo quidem officia dolore deleniti suscipit vero! Vero soluta consequatur facere? Quasi doloremque aperiam consectetur cupiditate debitis quas accusantium eius! Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere similique harum quos at, praesentium voluptatum doloribus magni nobis veniam, officiis distinctio corporis ea dolore, consequuntur laborum sed incidunt animi quas. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem repudiandae explicabo delectus similique, unde alias aliquid cum vitae perspiciatis, reiciendis, odit consequatur. Quibusdam maiores nam veritatis magni quia laudantium alias. Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, dolorem architecto. Similique rem soluta quae ullam ab, cupiditate veritatis ducimus quas magnam consectetur animi quam cum, quasi labore dolores consequatur.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla provident explicabo quidem officia dolore deleniti suscipit vero! Vero soluta consequatur facere? Quasi doloremque aperiam consectetur cupiditate debitis quas accusantium eius! Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere similique harum quos at, praesentium voluptatum doloribus magni nobis veniam, officiis distinctio corporis ea dolore, consequuntur laborum sed incidunt animi quas. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem repudiandae explicabo delectus similique, unde alias aliquid cum vitae perspiciatis, reiciendis, odit consequatur. Quibusdam maiores nam veritatis magni quia laudantium alias. Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, dolorem architecto. Similique rem soluta quae ullam ab, cupiditate veritatis ducimus quas magnam consectetur animi quam cum, quasi labore dolores consequatur.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla provident explicabo quidem officia dolore deleniti suscipit vero! Vero soluta consequatur facere? Quasi doloremque aperiam consectetur cupiditate debitis quas accusantium eius! Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere similique harum quos at, praesentium voluptatum doloribus magni nobis veniam, officiis distinctio corporis ea dolore, consequuntur laborum sed incidunt animi quas. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem repudiandae explicabo delectus similique, unde alias aliquid cum vitae perspiciatis, reiciendis, odit consequatur. Quibusdam maiores nam veritatis magni quia laudantium alias. Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, dolorem architecto. Similique rem soluta quae ullam ab, cupiditate veritatis ducimus quas magnam consectetur animi quam cum, quasi labore dolores consequatur.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla provident explicabo quidem officia dolore deleniti suscipit vero! Vero soluta consequatur facere? Quasi doloremque aperiam consectetur cupiditate debitis quas accusantium eius! Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere similique harum quos at, praesentium voluptatum doloribus magni nobis veniam, officiis distinctio corporis ea dolore, consequuntur laborum sed incidunt animi quas. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem repudiandae explicabo delectus similique, unde alias aliquid cum vitae perspiciatis, reiciendis, odit consequatur. Quibusdam maiores nam veritatis magni quia laudantium alias. Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, dolorem architecto. Similique rem soluta quae ullam ab, cupiditate veritatis ducimus quas magnam consectetur animi quam cum, quasi labore dolores consequatur.</p>
 </body>
 </html>
