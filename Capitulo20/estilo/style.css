@@ -28,13 +28,13 @@ header{
     font-family: var(--FONTE2);
 }
 
-header >h1{
+header > h1{
   padding-top: 50px; 
   font-variant: small-caps;
   font-size: 10vw; 
 }
 
-header >p{
+header > p{
     padding-bottom: 50px;
     font-size: 20px;
 }
